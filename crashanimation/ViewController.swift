@@ -8,16 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,UIViewControllerTransitioningDelegate{
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func show(_ sender: AnyObject) {
+        let   sec = ShowViewController()
+        
+        sec.transitioningDelegate = self
+        
+        self.present(sec, animated: true, completion: nil)
+        
+        
+        
+        
+        
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let   ani = SACCollapseAnimator()
+        
+        
+        return ani
     }
 
 
