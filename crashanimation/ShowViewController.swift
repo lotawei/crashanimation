@@ -13,7 +13,7 @@ class ShowViewController: UIViewController {
     var amimage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         self.amimage  = UIImageView(image:  UIImage( named:"砖石"))
         
         self.amimage.frame = CGRect(x: 0, y: 65, width: 375, height: 610)

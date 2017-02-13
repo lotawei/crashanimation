@@ -8,12 +8,12 @@
 
 import UIKit
 
-class SACCollapseAnimator: NSObject , UIViewControllerAnimatedTransitioning{
+class SACCollapseAnimator: NSObject ,UIViewControllerAnimatedTransitioning{
     //默认动画时间
     var   duration:Double = 2.0
     //碎片大小
-    var   slidewidth:NSInteger  = 10
-    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    var   slidewidth:NSInteger  = 4
+    open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         //获取View
         let containerView = transitionContext.containerView;
         let fromView      = transitionContext.viewController(forKey: .from)?.view
@@ -42,17 +42,13 @@ class SACCollapseAnimator: NSObject , UIViewControllerAnimatedTransitioning{
         //根据抽样点切割
         let snapshots = NSMutableArray(capacity: 0)
         for   q  in  xSampleArray{
-            
-            
-            
             for   r  in  ySampleArray{
                  let snapshotRegion = CGRect(x: (q as! Int) , y: (r as! Int), width: self.slidewidth, height: self.slidewidth)
-                
+
                  let snapshot      = fromViewSnapshot?.resizableSnapshotView(from: snapshotRegion, afterScreenUpdates: false, withCapInsets: UIEdgeInsets.zero)
                     snapshot?.frame        = snapshotRegion
                 containerView.addSubview(snapshot!)
                 snapshots.add(snapshot)
-                
             }
         }
         
@@ -67,8 +63,8 @@ class SACCollapseAnimator: NSObject , UIViewControllerAnimatedTransitioning{
             for    view  in  snapshots{
                     let  v = view as! UIView
                 
-                    let  dx = self.randomRange(range: 100, offset: -100)
-                   let   dy = self.randomRange(range: 100, offset: NSInteger(fromView!.frame.size.height))
+                    let  dx = self.randomRange(100, offset: -100)
+                   let   dy = self.randomRange(100, offset: NSInteger(fromView!.frame.size.height))
                     v.frame  = v.frame.offsetBy(dx: dx, dy: dy)
                 
                 
@@ -95,7 +91,7 @@ class SACCollapseAnimator: NSObject , UIViewControllerAnimatedTransitioning{
         return    self.duration
     }
     
-    func randomRange(range:NSInteger,offset:NSInteger) -> CGFloat {
+    func randomRange(_ range:NSInteger,offset:NSInteger) -> CGFloat {
         return   CGFloat(arc4random_uniform(UInt32(range))) + CGFloat(offset)
     }
     

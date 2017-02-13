@@ -15,6 +15,7 @@
 		ED366B731D99518400840978 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED366B721D99518400840978 /* ShowViewController.swift */; };
 		ED366B751D9952DC00840978 /* SACCollapseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED366B741D9952DC00840978 /* SACCollapseAnimator.swift */; };
 		ED366B771D99A55E00840978 /* xiaoguo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED366B761D99A55E00840978 /* xiaoguo.gif */; };
+		EDBCF3781E164F1A00B5DC16 /* 心里测试.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDBCF3771E164F1A00B5DC16 /* 心里测试.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ED366B721D99518400840978 /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		ED366B741D9952DC00840978 /* SACCollapseAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SACCollapseAnimator.swift; sourceTree = "<group>"; };
 		ED366B761D99A55E00840978 /* xiaoguo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = xiaoguo.gif; sourceTree = "<group>"; };
+		EDBCF3771E164F1A00B5DC16 /* 心里测试.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "心里测试.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				ED366B601D994FB700840978 /* ViewController.swift */,
 				ED366B721D99518400840978 /* ShowViewController.swift */,
 				ED366B621D994FB700840978 /* Main.storyboard */,
+				EDBCF3771E164F1A00B5DC16 /* 心里测试.jpeg */,
 				ED366B651D994FB700840978 /* Assets.xcassets */,
 				ED366B671D994FB700840978 /* LaunchScreen.storyboard */,
 				ED366B6A1D994FB700840978 /* Info.plist */,
@@ -100,11 +103,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = lotawei;
 				TargetAttributes = {
 					ED366B5A1D994FB700840978 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBCF3781E164F1A00B5DC16 /* 心里测试.jpeg in Resources */,
 				ED366B691D994FB700840978 /* LaunchScreen.storyboard in Resources */,
 				ED366B661D994FB700840978 /* Assets.xcassets in Resources */,
 				ED366B641D994FB700840978 /* Main.storyboard in Resources */,
@@ -193,6 +198,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -242,6 +248,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
